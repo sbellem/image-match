@@ -3,7 +3,6 @@ FROM python:2.7
 RUN apt-get update && apt-get install -y libblas-dev liblapack-dev gfortran
 
 RUN pip install --upgrade pip
-RUN pip install numpy scipy
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
