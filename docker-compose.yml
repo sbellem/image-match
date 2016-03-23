@@ -4,6 +4,7 @@ services:
   image-match:
     build: .
     volumes:
-      - .:/usr/src/app/
+      - ./image_match:/usr/src/app/image_match
+      - ./setup.py:/usr/src/app/setup.py
   elasticsearch:
     image: elasticsearch
