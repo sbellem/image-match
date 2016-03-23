@@ -88,6 +88,8 @@ setup(
         'pytest-runner',
     ],
     install_requires=[
+        'matplotlib>=1.3.1',
+        'scipy>=0.17,<0.18',
         'scikit-image>=0.12,<0.13',
         'cairosvg>1,<2',
         'elasticsearch>=2.3,<2.4',
