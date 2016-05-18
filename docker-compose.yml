@@ -7,3 +7,9 @@ services:
       - .:/usr/src/app/
   elasticsearch:
     image: elasticsearch
+  docs:
+    image: nginx
+    ports:
+      - '40080:80'
+    volumes:
+      - ./docs/build/html:/usr/share/nginx/html
