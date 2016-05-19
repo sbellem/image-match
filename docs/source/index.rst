@@ -26,6 +26,7 @@ Contents
     signatures
     searches
     backends
+    docs
 
 
 Indices and tables

@@ -7,7 +7,13 @@ services:
       - .:/usr/src/app/
   elasticsearch:
     image: elasticsearch
-  docs:
+  bdocs:
+    build: .
+    volumes:
+      - .:/usr/src/app/
+    working_dir: /usr/src/app/docs
+    command: make html
+  vdocs:
     image: nginx
     ports:
       - '40080:80'
